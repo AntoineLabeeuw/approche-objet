@@ -32,30 +32,51 @@ public class Personne {
 		this.adresse = adresse;
 	}
 	
+	/**
+	 * affiche le prenom et le nom en majuscule
+	 */
 	public void affichePrenomNom() {
 		System.out.println(prenom + " " + nom.toUpperCase());
 	}
 	
+	/**
+	 * @param nom : change le nom de la personne
+	 */
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
 	
+	/**
+	 * @param prenom : nouveau prenom qui remplacera celui existant
+	 */
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
 	
+	/**
+	 * @param adr : nouvelle adresse
+	 */
 	public void setAdresse(AdressePostale adr) {
 		this.adresse = adr;
 	}
 	
+	/**
+	 * @return le nom de l'instance
+	 */
 	public String getNom() {
 		return nom;
 	}
 	
+	/**
+	 * @return le prenom de l'instance
+	 */
 	public String getPrenom() {
 		return prenom;
 	}
 	
+	/**
+	 * @return l'adresse de l'instance
+	 */
 	public AdressePostale getAdresse() {
 		return adresse;
 	}
