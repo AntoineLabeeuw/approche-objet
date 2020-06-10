@@ -31,11 +31,18 @@ public class TestPersonne {
 		*/
 		
 		// TP2
-		// 1e constructeur : nom et prenom uniquement
+		/*// 1e constructeur : nom et prenom uniquement
 		Personne jean = new Personne("John", "Jean");
 		// 2e constructeur : 
 		AdressePostale ap1 = new AdressePostale(12, "du marche", 11400, "Casternaudary");
 		Personne jeannette = new Personne("Johnette", "Jeannette", ap1);
+		jeannette.affichePrenomNom();
+		*/
+		
+		//TP3
+		AdressePostale ap1 = new AdressePostale(12, "du marche", 11400, "Casternaudary");
+		Personne jean = new Personne("John", "Jean");
+		jean.setAdresse(ap1);
 		
 	}
 
