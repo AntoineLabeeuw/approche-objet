@@ -40,9 +40,12 @@ public class TestPersonne {
 		*/
 		
 		//TP3
-		AdressePostale ap1 = new AdressePostale(12, "du marche", 11400, "Casternaudary");
+		AdressePostale ap1 = new AdressePostale(12, "du marche", 11400, "Castelnaudary");
 		Personne jean = new Personne("John", "Jean");
 		jean.setAdresse(ap1);
+		// test of adresse getter
+		AdressePostale ap3 = jean.getAdresse();
+		System.out.println(ap3.ville);
 		
 	}
 
