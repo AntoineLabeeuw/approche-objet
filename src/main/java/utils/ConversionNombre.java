@@ -18,7 +18,7 @@ public class ConversionNombre {
 			System.out.println("Les deux sont identiques");
 		}
 		// the one we should use
-		int max2 = Integer.max(a, b);
-		System.out.println(max2);
+		System.out.println(Integer.max(a, b));
+		
 	}
 }
