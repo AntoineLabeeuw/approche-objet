@@ -7,27 +7,44 @@ package fr.diginamic.banque.entites;
  */
 public class Compte {
 	private int numeroCompte;
-	private int soldeCompte;
+	private double soldeCompte;
 	
-	public Compte(int numeroCompte, int soldeCompte) {
+	/** 
+	 * Constructeur
+	 * @param numeroCompte : numero de compte
+	 * @param soldeCompte : solde du compte
+	 */
+	public Compte(int numeroCompte, double soldeCompte) {
 		super();
 		this.numeroCompte = numeroCompte;
 		this.soldeCompte = soldeCompte;
 	}
 
+	/** getter
+	 * @return le numero du compte
+	 */
 	public int getNumeroCompte() {
 		return numeroCompte;
 	}
 
+	/** setter
+	 * @param numeroCompte : le numero du compte a modifier
+	 */
 	public void setNumeroCompte(int numeroCompte) {
 		this.numeroCompte = numeroCompte;
 	}
 
-	public int getSoldeCompte() {
+	/** getter
+	 * @return le solde du compte
+	 */
+	public double getSoldeCompte() {
 		return soldeCompte;
 	}
 
-	public void setSoldeCompte(int soldeCompte) {
+	/** setter
+	 * @param soldeCompte le solde a modifier
+	 */
+	public void setSoldeCompte(double soldeCompte) {
 		this.soldeCompte = soldeCompte;
 	}
 	
