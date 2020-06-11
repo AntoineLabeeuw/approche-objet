@@ -6,7 +6,7 @@ package fr.diginamic.banque.entites;
  *
  */
 public class Compte {
-	private int numeroCompte;
+	private String numeroCompte;
 	private double soldeCompte;
 	
 	/** 
@@ -14,8 +14,7 @@ public class Compte {
 	 * @param numeroCompte : numero de compte
 	 * @param soldeCompte : solde du compte
 	 */
-	public Compte(int numeroCompte, double soldeCompte) {
-		super();
+	public Compte(String numeroCompte, double soldeCompte) {
 		this.numeroCompte = numeroCompte;
 		this.soldeCompte = soldeCompte;
 	}
@@ -23,14 +22,14 @@ public class Compte {
 	/** getter
 	 * @return le numero du compte
 	 */
-	public int getNumeroCompte() {
+	public String getNumeroCompte() {
 		return numeroCompte;
 	}
 
 	/** setter
 	 * @param numeroCompte : le numero du compte a modifier
 	 */
-	public void setNumeroCompte(int numeroCompte) {
+	public void setNumeroCompte(String numeroCompte) {
 		this.numeroCompte = numeroCompte;
 	}
 
@@ -58,7 +57,4 @@ public class Compte {
 		//return "Compte [numeroCompte=" + numeroCompte + ", soldeCompte=" + soldeCompte + "]";
 		return("Numéro de compte : " + numeroCompte + "\nSolde du compte : " + soldeCompte);
 	}
-	
-	
-	
 }
