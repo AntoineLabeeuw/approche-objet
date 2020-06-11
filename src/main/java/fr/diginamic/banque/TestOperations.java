@@ -17,7 +17,7 @@ public class TestOperations {
 		for (int i = 0; i < tabOp.length; i++) {
 			System.out.print(tabOp[i].getType() + " | ");
 			System.out.println(tabOp[i]);
-			if (tabOp[i].getType() == "Crédit") {
+			if (tabOp[i].getType().equals("Crédit")) {
 				montantGlobal += tabOp[i].getMontant();
 			} else {
 				montantGlobal -= tabOp[i].getMontant();
