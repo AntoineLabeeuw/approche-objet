@@ -47,5 +47,18 @@ public class Compte {
 	public void setSoldeCompte(double soldeCompte) {
 		this.soldeCompte = soldeCompte;
 	}
+
+	/**
+	 * redefinition de la methode toString()
+	 * affiche le numero du compte et son solde
+	 */
+	@Override
+	public String toString() {
+		// auto generated one
+		//return "Compte [numeroCompte=" + numeroCompte + ", soldeCompte=" + soldeCompte + "]";
+		return("Numéro de compte : " + numeroCompte + "\nSolde du compte : " + soldeCompte);
+	}
+	
+	
 	
 }
