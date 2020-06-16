@@ -1,12 +1,13 @@
 package Interfaces;
+import static java.lang.Math.PI;
 
 public class Cercle implements ObjetGeometrique {
 	private double rayon;
-	static final double PI = 3.14;
 
 	/**
 	 * methode qui renvoie le perimetre du cercle
 	 */
+	@Override
 	public double perimetre() {
 		return (rayon * PI);
 	}
@@ -14,6 +15,7 @@ public class Cercle implements ObjetGeometrique {
 	/**
 	 * methode qui renvoie la surface du cercle
 	 */
+	@Override
 	public double surface() {
 		return ((rayon * rayon) * PI);
 	}
