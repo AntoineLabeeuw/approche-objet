@@ -18,13 +18,25 @@ public class PersoMonstre {
 		return (force + 1 + r.nextInt(10));
 	}
 
+	
+
+	/** Getter
+	 * @return the nom
+	 */
 	public String getNom() {
 		return nom;
 	}
 
+
+
+	/** Setter
+	 * @param nom the nom to set
+	 */
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+
+
 
 	public int getForce() {
 		return force;

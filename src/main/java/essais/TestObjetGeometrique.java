@@ -1,8 +1,8 @@
-package fr.diginamic.banque;
+package essais;
 
-import fr.diginamic.banque.entites.ObjetGeometrique;
-import fr.diginamic.banque.entites.Cercle;
-import fr.diginamic.banque.entites.Rectangle;
+import Interfaces.Cercle;
+import Interfaces.ObjetGeometrique;
+import Interfaces.Rectangle;
 
 /**
  * test des classes Cercle et Rectangle, implementation de l'interface

@@ -1,4 +1,4 @@
-package fr.diginamic.banque.entites;
+package Interfaces;
 
 /**
  * Liste les méthodes obligatoires que doit posséder un objet géométrique
