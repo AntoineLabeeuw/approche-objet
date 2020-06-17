@@ -1,9 +1,10 @@
-package sets;
+package tri;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-public class Pays {
+public class Pays implements Comparable<Pays> {
 	private String nom;
 	private long nombreHab;
 	private double pibHab;
@@ -87,9 +88,15 @@ public class Pays {
 	public double getPibTotal() {
 		return (pibHab * nombreHab);
 	}
+	
+	@Override
+	public int compareTo(Pays p2) {
+		// tri par le nom en ordre alphabetique
+		return(nom.compareTo(p2.nom));
+	}
 
 	public static void main(String[] args) {
-		Set<Pays> listePays = new HashSet<>();
+		List<Pays> listePays = new ArrayList<>();
 		listePays.add(new Pays("USA", 332_639_000, 59_495));
 		listePays.add(new Pays("France", 67_064_000, 43_551));
 		listePays.add(new Pays("Allemagne", 83_149_300, 50_206));
@@ -99,41 +106,22 @@ public class Pays {
 		listePays.add(new Pays("Chine", 1_400_050_000, 16_624));
 		listePays.add(new Pays("Russie", 146_748_590, 28_712));
 		listePays.add(new Pays("Inde", 1_368_163_000, 5_174));
-		// System.out.println(listePays);
-
-		// rechercher le pays avec le plus grand PIB/habitant
-
-		Pays paysGrandPibHab = listePays.iterator().next();
-		for (Pays pays : listePays) {
-			if (pays.getPibHab() > paysGrandPibHab.getPibHab()) {
-				paysGrandPibHab = pays;
-			}
-		}
-		System.out.println(paysGrandPibHab);
-
-		// recherche le pays avec le PIB total le plus haut
-		Pays paysPlusGrandPib = listePays.iterator().next();
-		for (Pays pays : listePays) {
-			if (pays.getPibTotal() > paysPlusGrandPib.getPibTotal()) {
-				paysPlusGrandPib = pays;
-			}
-		}
-		System.out.println(paysPlusGrandPib);
-
-		// mettre en majuscule le pays avec le pib total le plus faible
-		Pays paysPlusPetitPib = listePays.iterator().next();
-		for (Pays pays : listePays) {
-			if (pays.getPibTotal() < paysPlusPetitPib.getPibTotal()) {
-				paysPlusPetitPib = pays;
-			}
-		}
-		paysPlusPetitPib.setNom(paysPlusPetitPib.getNom().toUpperCase());
-		System.out.println(paysPlusPetitPib);
-		listePays.remove(paysPlusPetitPib);
-
-		// affichage final, italie est supprimee
+		
+		// liste non triee
 		System.out.println(listePays);
-
+		Collections.sort(listePays);
+		// liste triee sur le nom
+		System.out.println(listePays);
+		// listre triee avec le comparator sur le nombre d'habitants
+		Collections.sort(listePays, new ComparatorHabitant());
+		System.out.println(listePays);
+		// listre triee avec le comparator sur le nombre d'habitants
+		Collections.sort(listePays, new ComparatorPibHabitant());
+		System.out.println(listePays);
 	}
+
+	
+	
+	
 
 }
