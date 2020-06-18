@@ -21,11 +21,9 @@ public class RecherchePopDept extends MenuServices {
 		int popTotale = 0;
 		for (Ville ville : recensement.getListeVille()) {
 			if (ville.getCodeDept().equals(codeDept)) {
-				System.out.println(ville.getNomCommune());
 				popTotale += ville.getPopTotale();
 			}
 		}
 		System.out.println("Population du departement " + codeDept + " : " + popTotale);
 	}
-
 }
