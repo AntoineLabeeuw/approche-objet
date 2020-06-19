@@ -1,6 +1,7 @@
 package fr.diginamic.testenumeration;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -24,14 +25,23 @@ public class TestAvecEnum {
 		for(Pays p : listePays) {
 			System.out.println(p);
 		}
-		for(Continent cont : Continent.values()) {
+		/*for(Continent cont : Continent.values()) {
 			int nb = 0;
 			for(Pays p : listePays) {
 				if(cont.equals(p.getContinent()))
 					nb++;
 			}
 			System.out.println(cont + "\t\t" + nb);
+		}*/
+		Map<Continent, Integer> compteur = new HashMap<>();
+		// initialisation
+		for(Continent c : Continent.values()) {
+			compteur.put(c, 0);
 		}
+		for( Pays p : listePays) {
+			compteur.put(p.getContinent(), compteur.get(p.getContinent())+1);
+		}
+		System.out.println(compteur);
 	}
 
 }
