@@ -20,7 +20,7 @@ public class TestDates {
 
 		// affichage de la date d'aujourd'hui avec de format jour/mois/annee
 		// heure:minutes:secondes
-		Date date2 = new Date(116, 4,19,23,30,59);
+		Date date2 = new Date(116, 4, 19, 23, 30, 59);
 		SimpleDateFormat ft2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		System.out.println("19 mai 2016 à 23h30 et 59s");
 		System.out.println(ft2.format(aujourdHui));

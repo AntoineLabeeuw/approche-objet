@@ -4,6 +4,12 @@ import java.io.File;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
 
+/**
+ * classe de test pour la lecture de fichiers
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class LectureFichier {
 
 	public static void main(String[] args) {

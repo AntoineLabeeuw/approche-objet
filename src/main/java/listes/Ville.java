@@ -5,8 +5,16 @@ import java.util.List;
 import java.util.Collections;
 import java.util.Iterator;
 
+/**
+ * Classe conceptualisant une ville
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class Ville {
+	/** nom */
 	private String nom;
+	/** population */
 	private int population;
 
 	/**
@@ -57,6 +65,11 @@ public class Ville {
 		this.population = population;
 	}
 
+	/**
+	 * methode de tests
+	 * 
+	 * @param args : none used
+	 */
 	public static void main(String[] args) {
 		List<Ville> listeVille = new ArrayList<>();
 		listeVille.add(new Ville("Nice", 343000));
@@ -67,7 +80,7 @@ public class Ville {
 		listeVille.add(new Ville("Pau", 77200));
 		listeVille.add(new Ville("Marseille", 850700));
 		listeVille.add(new Ville("Tarbes", 40600));
-		
+
 		// Rechercher la ville la plus peuplee
 		int max = Integer.MIN_VALUE;
 		String nomVille = "";
@@ -86,7 +99,8 @@ public class Ville {
 			}
 		}
 		listeVille.remove(v);
-		// Modifiez les villes de plus de 100 000 habitants en mettant leur nom en majuscules
+		// Modifiez les villes de plus de 100 000 habitants en mettant leur nom en
+		// majuscules
 		for (Ville ville : listeVille) {
 			if (ville.getPopulation() > 100_000) {
 				ville.setNom(ville.getNom().toUpperCase());

@@ -5,6 +5,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * classe de test sur les maps contenant des objets. Ici, une maps contenant des
+ * pays.
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class mapPays {
 
 	public static void main(String[] args) {
@@ -18,12 +25,12 @@ public class mapPays {
 		mapPays.put("Chine", new Pays("Chine", 1_400_050_000, 16_624));
 		mapPays.put("Russie", new Pays("Russie", 146_748_590, 28_712));
 		mapPays.put("Inde", new Pays("Inde", 1_368_163_000, 5_174));
-		
+
 		Iterator<String> iterCle = mapPays.keySet().iterator();
 		Pays paysPlusPetitHab = mapPays.get(iterCle.next());
 		while (iterCle.hasNext()) {
 			String cle = iterCle.next();
-			if(paysPlusPetitHab.getNombreHab() > mapPays.get(cle).getNombreHab()) {
+			if (paysPlusPetitHab.getNombreHab() > mapPays.get(cle).getNombreHab()) {
 				paysPlusPetitHab = mapPays.get(cle);
 			}
 		}
@@ -37,7 +44,7 @@ public class mapPays {
 			String cle = iterCle.next();
 			System.out.println(mapPays.get(cle));
 		}
-		
+
 	}
 
 }

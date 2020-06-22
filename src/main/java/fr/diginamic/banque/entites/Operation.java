@@ -7,7 +7,9 @@ package fr.diginamic.banque.entites;
  *
  */
 public abstract class Operation {
+	/** date */
 	private String date;
+	/** montant */
 	private double montant;
 
 	/**
@@ -36,6 +38,8 @@ public abstract class Operation {
 	}
 
 	/**
+	 * methode qui retourne le montant de l'operation effectuee
+	 * 
 	 * @return : le montant de l'operation
 	 */
 	public double getMontant() {
@@ -49,6 +53,11 @@ public abstract class Operation {
 		this.montant = montant;
 	}
 
+	/**
+	 * methode qui retourne le type de l'operation
+	 * 
+	 * @return le type de l'operation
+	 */
 	public abstract String getType();
 
 	@Override

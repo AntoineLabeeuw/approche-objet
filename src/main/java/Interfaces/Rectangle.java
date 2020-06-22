@@ -1,7 +1,15 @@
 package Interfaces;
 
+/**
+ * Classe conceptualisant un rectangle
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class Rectangle implements ObjetGeometrique {
+	/** longueur */
 	private double longueur;
+	/** largeur */
 	private double largeur;
 
 	/**
@@ -19,6 +27,8 @@ public class Rectangle implements ObjetGeometrique {
 	}
 
 	/**
+	 * constructeur
+	 * 
 	 * @param longueur : la longueur du rectangle
 	 * @param largeur  : la largeur du rectangle
 	 */
@@ -29,6 +39,8 @@ public class Rectangle implements ObjetGeometrique {
 	}
 
 	/**
+	 * getter
+	 * 
 	 * @return la longueur du rectangle
 	 */
 	public double getLongueur() {
@@ -36,6 +48,8 @@ public class Rectangle implements ObjetGeometrique {
 	}
 
 	/**
+	 * setter
+	 * 
 	 * @param longueur : la longueur a modifier
 	 */
 	public void setLongueur(double longueur) {
@@ -43,6 +57,8 @@ public class Rectangle implements ObjetGeometrique {
 	}
 
 	/**
+	 * getter
+	 * 
 	 * @return la largeur du rectangle
 	 */
 	public double getLargeur() {
@@ -50,6 +66,8 @@ public class Rectangle implements ObjetGeometrique {
 	}
 
 	/**
+	 * setter
+	 * 
 	 * @param largeur : la largeur a modifier
 	 */
 	public void setLargeur(double largeur) {

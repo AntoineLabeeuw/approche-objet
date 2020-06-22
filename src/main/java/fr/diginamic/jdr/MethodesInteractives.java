@@ -8,8 +8,19 @@ import fr.diginamic.jdr.entites.PersoMonstre;
 import fr.diginamic.jdr.entites.Gobelin;
 import fr.diginamic.jdr.entites.Troll;
 
-
+/**
+ * Classes ayant toutes les methodes necessitant le scanner.
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class MethodesInteractives {
+	/**
+	 * methode affichante le menu, et appelant d'autres methodes selon le choux de
+	 * l'utilisateur
+	 * 
+	 * @param scanner : l'entree clavier du joueur
+	 */
 	public static void afficherMenu(Scanner scanner) {
 		System.out.println("----- Menu -----");
 		System.out.println("1. Créer un personnage");
@@ -44,6 +55,11 @@ public class MethodesInteractives {
 
 	}
 
+	/**
+	 * Creation du personnage
+	 * 
+	 * @param scanner : l'entree clavier du joueur, permet de saisir le nom.
+	 */
 	public static void CreationPersonnage(Scanner scanner) {
 		System.out.println("Donnez un nom a votre personnage :");
 		String entreeClavier = scanner.nextLine();
@@ -51,13 +67,20 @@ public class MethodesInteractives {
 		Jeu.setJoueur(joueur);
 		System.out.println("Votre personnage a " + Jeu.getJoueur().getPointsDeVie() + " points de vie et une force de "
 				+ Jeu.getJoueur().getForce() + ".");
-		if(Jeu.getJoueur().getForce() < 14) {
+		if (Jeu.getJoueur().getForce() < 14) {
 			System.out.println("...Éspérons que vous ne rencontrerez que des loups...");
 		} else {
 			System.out.println("Il est fort ! La chance est de votre coté !");
 		}
 	}
 
+	/**
+	 * Calcul d'un combat entre le personnage du joueur et un monstre choisi
+	 * aleatoirement. Se finit lorsque le joueur ou le monstre a les points de vie a
+	 * 0.
+	 * 
+	 * 
+	 */
 	public static void tourCombat() {
 		// creation d'un monstre
 		Random r = new Random();

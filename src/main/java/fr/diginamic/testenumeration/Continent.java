@@ -1,32 +1,42 @@
 package fr.diginamic.testenumeration;
 
+/**
+ * enumerations des 5 continents
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public enum Continent {
-	ASIE("Asie"),
-	OCEANIE("Oceanie"),
-	AFRIQUE("Afrique"),
-	EUROPE("Europe"),
-	AMERIQUE("Amerique");
+	ASIE("Asie"), OCEANIE("Oceanie"), AFRIQUE("Afrique"), EUROPE("Europe"), AMERIQUE("Amerique");
+
+	/** libelle */
 	private String libelle;
 
-	/** Constructeur
+	/**
+	 * Constructeur
+	 * 
 	 * @param libelle
 	 */
 	private Continent(String libelle) {
 		this.libelle = libelle;
 	}
 
-	/** Getter
+	/**
+	 * Getter
+	 * 
 	 * @return the libelle
 	 */
 	public String getLibelle() {
 		return libelle;
 	}
 
-	/** Setter
+	/**
+	 * Setter
+	 * 
 	 * @param libelle the libelle to set
 	 */
 	public void setLibelle(String libelle) {
 		this.libelle = libelle;
 	}
-	
+
 }

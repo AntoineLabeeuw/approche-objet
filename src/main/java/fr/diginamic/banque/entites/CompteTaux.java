@@ -1,6 +1,13 @@
 package fr.diginamic.banque.entites;
 
+/**
+ * Classe conceptualisant un compte bancaire avec un taux de remuneration
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class CompteTaux extends Compte {
+	/** taux de remuneration du compte */
 	private double tauxRemuneration;
 
 	/**

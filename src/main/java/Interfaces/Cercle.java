@@ -1,7 +1,15 @@
 package Interfaces;
+
 import static java.lang.Math.PI;
 
+/**
+ * Classe conceptualisant un cercle
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class Cercle implements ObjetGeometrique {
+	/** rayon */
 	private double rayon;
 
 	/**
@@ -21,6 +29,8 @@ public class Cercle implements ObjetGeometrique {
 	}
 
 	/**
+	 * constructeur
+	 * 
 	 * @param rayon : le rayon du cercle
 	 */
 	public Cercle(double rayon) {
@@ -29,6 +39,8 @@ public class Cercle implements ObjetGeometrique {
 	}
 
 	/**
+	 * getter
+	 * 
 	 * @return le rayon du cercle
 	 */
 	public double getRayon() {
@@ -36,6 +48,8 @@ public class Cercle implements ObjetGeometrique {
 	}
 
 	/**
+	 * setter
+	 * 
 	 * @param rayon : le rayon du cercle
 	 */
 	public void setRayon(double rayon) {

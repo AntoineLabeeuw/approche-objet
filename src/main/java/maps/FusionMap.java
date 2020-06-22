@@ -4,6 +4,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * classe de tests sur les fucions de aps
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class FusionMap {
 
 	public static void main(String[] args) {
@@ -20,17 +26,12 @@ public class FusionMap {
 
 		// fusion map3
 		Map<Integer, String> map3 = new HashMap<Integer, String>();
-		/*Iterator<Integer> iterCle = map1.keySet().iterator();
-		while (iterCle.hasNext()) {
-			int cle = iterCle.next();
-			map3.put(cle, map1.get(cle));
-		}
-		iterCle = map2.keySet().iterator();
-		while (iterCle.hasNext()) {
-			int cle = iterCle.next();
-			map3.put(cle, map2.get(cle));
-		}
-		*/
+		/*
+		 * Iterator<Integer> iterCle = map1.keySet().iterator(); while
+		 * (iterCle.hasNext()) { int cle = iterCle.next(); map3.put(cle, map1.get(cle));
+		 * } iterCle = map2.keySet().iterator(); while (iterCle.hasNext()) { int cle =
+		 * iterCle.next(); map3.put(cle, map2.get(cle)); }
+		 */
 		// methode la plus simple
 		map3.putAll(map1);
 		map3.putAll(map2);

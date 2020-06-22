@@ -1,13 +1,15 @@
 package fr.diginamic.entites;
 
 /**
- * Classe implementant le concept de client defini par un nom et un prenom
+ * Classe conceptualisant un client defini par un nom et un prenom
  * 
  * @author antoinelabeeuw
  *
  */
 public class Client {
+	/** nom */
 	private String nom;
+	/** prenom */
 	private String prenom;
 
 	/**

@@ -8,7 +8,9 @@ package fr.diginamic.formes;
  *
  */
 public class Rectangle extends Forme {
+	/** longueur */
 	double longueur;
+	/** largeur */
 	double largeur;
 
 	/**

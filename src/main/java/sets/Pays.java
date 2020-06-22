@@ -3,9 +3,18 @@ package sets;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Classe conceptualisant un pays
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class Pays {
+	/** nom */
 	private String nom;
+	/** nombreHab */
 	private long nombreHab;
+	/** pibHab */
 	private double pibHab;
 
 	/**
@@ -88,6 +97,11 @@ public class Pays {
 		return (pibHab * nombreHab);
 	}
 
+	/**
+	 * methode de test
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Set<Pays> listePays = new HashSet<>();
 		listePays.add(new Pays("USA", 332_639_000, 59_495));

@@ -6,8 +6,8 @@ import fr.diginamic.formes.Carre;
 import fr.diginamic.formes.AffichageForme;
 
 /**
- * Classe de test pour la super classe Forme et ses classes filles Classe de
- * test de la classe AffichageForme
+ * Classe de test pour la super classe Forme et ses classes filles <br/>
+ * Classe de test de la classe AffichageForme
  * 
  * @author antoinelabeeuw
  *

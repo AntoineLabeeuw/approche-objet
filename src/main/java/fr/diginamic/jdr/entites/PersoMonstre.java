@@ -2,9 +2,18 @@ package fr.diginamic.jdr.entites;
 
 import java.util.Random;
 
+/**
+ * classe conceptualisant le personnage, mais aussi les monstres.
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class PersoMonstre {
+	/** nom */
 	protected String nom;
+	/** force */
 	protected int force;
+	/** points de vie */
 	protected int pointsDeVie;
 
 	/**
@@ -18,38 +27,56 @@ public class PersoMonstre {
 		return (force + 1 + r.nextInt(10));
 	}
 
-	
-
-	/** Getter
+	/**
+	 * Getter
+	 * 
 	 * @return the nom
 	 */
 	public String getNom() {
 		return nom;
 	}
 
-
-
-	/** Setter
+	/**
+	 * Setter
+	 * 
 	 * @param nom the nom to set
 	 */
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
 
-
-
+	/**
+	 * Getter
+	 * 
+	 * @return the force
+	 */
 	public int getForce() {
 		return force;
 	}
 
+	/**
+	 * Setter
+	 * 
+	 * @param force : the force to set
+	 */
 	public void setForce(int force) {
 		this.force = force;
 	}
 
+	/**
+	 * Getter
+	 * 
+	 * @return : points de vie
+	 */
 	public int getPointsDeVie() {
 		return pointsDeVie;
 	}
 
+	/**
+	 * Setter
+	 * 
+	 * @param pointsDeVie : les points de vie a modifier
+	 */
 	public void setPointsDeVie(int pointsDeVie) {
 		this.pointsDeVie = pointsDeVie;
 	}

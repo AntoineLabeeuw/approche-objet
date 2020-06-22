@@ -12,8 +12,11 @@ import java.util.List;
  *
  */
 public class PaysTriParPibHab implements Comparable<PaysTriParPibHab> {
+	/** nom */
 	private String nom;
+	/** nombreHab */
 	private long nombreHab;
+	/** pibHab */
 	private double pibHab;
 
 	/**
@@ -105,12 +108,16 @@ public class PaysTriParPibHab implements Comparable<PaysTriParPibHab> {
 			return (-1);
 		}
 		return (0);
-		/* autre methode
-		 * return this.pibHab - p2.getPibHab()
-		 * retourne
+		/*
+		 * autre methode return this.pibHab - p2.getPibHab() retourne
 		 */
 	}
 
+	/**
+	 * methode de test
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		List<PaysTriParPibHab> listePays = new ArrayList<>();
 		listePays.add(new PaysTriParPibHab("USA", 332_639_000, 59_495));

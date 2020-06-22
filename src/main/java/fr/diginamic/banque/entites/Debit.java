@@ -1,5 +1,11 @@
 package fr.diginamic.banque.entites;
 
+/**
+ * classe conceptualisant une operation de debit.
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class Debit extends Operation {
 
 	/**

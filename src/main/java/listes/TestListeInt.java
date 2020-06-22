@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
 
+/**
+ * classe de test sur les listes d'entiers
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class TestListeInt {
 
 	public static void main(String[] args) {
@@ -16,14 +22,14 @@ public class TestListeInt {
 		liste.add(4);
 		liste.add(8);
 		liste.add(5);
-		
+
 		System.out.println("----- Affichage de tous les éléments de la liste -----");
 		System.out.println(liste);
 		System.out.println("Taille de la liste : " + liste.size());
-		System.out.println("Maximum de la liste : "+ Collections.max(liste));
-		System.out.println("Minimum de la liste : "+ Collections.min(liste));
+		System.out.println("Maximum de la liste : " + Collections.max(liste));
+		System.out.println("Minimum de la liste : " + Collections.min(liste));
 		for (Integer i : liste) {
-			if(i < 0) {
+			if (i < 0) {
 				liste.set(liste.indexOf(i), -i);
 			}
 		}

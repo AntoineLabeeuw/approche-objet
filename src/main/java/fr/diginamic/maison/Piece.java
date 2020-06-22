@@ -1,7 +1,15 @@
 package fr.diginamic.maison;
 
+/**
+ * Classe conceptualisant une piece quelconque d'une maison
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public abstract class Piece {
+	/** superficie */
 	private double superficie;
+	/** etage */
 	private int etage;
 
 	/**

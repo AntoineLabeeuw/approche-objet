@@ -1,19 +1,25 @@
 package fr.diginamic.entites;
 
 /**
- * implemente la classe compte utilise la classe client
+ * conceptualise un compte qui utilise la classe client
  * 
  * @author antoinelabeeuw
  *
  */
 public class Compte {
+	/** client */
 	private Client client;
+	/** numero du compte */
 	private String numeroCompte;
+	/** solde */
 	private double solde;
 
 	/**
-	 * @param client : le client, genere par la classe Client
-	 * @param solde  : double
+	 * Constructeur
+	 * 
+	 * @param client       : le client (classe client)
+	 * @param numeroCompte : le numero du compte
+	 * @param solde        : le solde du compte
 	 */
 	public Compte(Client client, String numeroCompte, double solde) {
 		this.client = client;
@@ -67,7 +73,5 @@ public class Compte {
 	public String toString() {
 		return "Compte du " + client + ", numeroCompte= " + numeroCompte + ", solde= " + solde + "]";
 	}
-
-
 
 }

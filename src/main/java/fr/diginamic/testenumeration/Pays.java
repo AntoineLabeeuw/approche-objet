@@ -4,10 +4,20 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * classe conceptualisant un pays
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class Pays implements Comparable<Pays> {
+	/** nom */
 	private String nom;
+	/** nombre d'habitants */
 	private long nombreHab;
+	/** pib par habitant */
 	private double pibHab;
+	/** continent */
 	private Continent continent;
 
 	/**
@@ -25,14 +35,18 @@ public class Pays implements Comparable<Pays> {
 		this.continent = continent;
 	}
 
-	/** Getter
+	/**
+	 * Getter
+	 * 
 	 * @return the continent
 	 */
 	public Continent getContinent() {
 		return continent;
 	}
 
-	/** Setter
+	/**
+	 * Setter
+	 * 
 	 * @param continent the continent to set
 	 */
 	public void setContinent(Continent continent) {
@@ -95,7 +109,8 @@ public class Pays implements Comparable<Pays> {
 
 	@Override
 	public String toString() {
-		return ("Pays : " + nom + " (Continent : " + continent + "), nombre d'habitants : " + nombreHab + ", PIB total : " + getPibTotal() + "\n");
+		return ("Pays : " + nom + " (Continent : " + continent + "), nombre d'habitants : " + nombreHab
+				+ ", PIB total : " + getPibTotal() + "\n");
 	}
 
 	/**
@@ -104,16 +119,21 @@ public class Pays implements Comparable<Pays> {
 	public double getPibTotal() {
 		return (pibHab * nombreHab);
 	}
-	
+
 	@Override
 	public int compareTo(Pays p2) {
 		// tri par le nom en ordre alphabetique
-		return(nom.compareTo(p2.nom));
+		return (nom.compareTo(p2.nom));
 	}
 
+	/**
+	 * methode de test
+	 * 
+	 * @param args : none used
+	 */
 	public static void main(String[] args) {
 		List<Pays> listePays = new ArrayList<>();
-		listePays.add(new Pays("USA", 332_639_000, 59_495,Continent.AMERIQUE));
+		listePays.add(new Pays("USA", 332_639_000, 59_495, Continent.AMERIQUE));
 		listePays.add(new Pays("France", 67_064_000, 43_551, Continent.EUROPE));
 		listePays.add(new Pays("Allemagne", 83_149_300, 50_206, Continent.EUROPE));
 		listePays.add(new Pays("UK", 66_436_000, 43_620, Continent.EUROPE));
@@ -122,7 +142,7 @@ public class Pays implements Comparable<Pays> {
 		listePays.add(new Pays("Chine", 1_400_050_000, 16_624, Continent.ASIE));
 		listePays.add(new Pays("Russie", 146_748_590, 28_712, Continent.ASIE));
 		listePays.add(new Pays("Inde", 1_368_163_000, 5_174, Continent.ASIE));
-		
+
 		// liste non triee
 		System.out.println(listePays);
 		Collections.sort(listePays);
@@ -135,9 +155,5 @@ public class Pays implements Comparable<Pays> {
 		Collections.sort(listePays, new ComparatorPibHabitant());
 		System.out.println(listePays);
 	}
-
-	
-	
-	
 
 }

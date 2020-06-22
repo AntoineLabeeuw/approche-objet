@@ -1,6 +1,13 @@
 package fr.diginamic.maison;
 
+/**
+ * Clase conceptualisant une maison, constituee de differentes pieces
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class Maison {
+	/** pieces */
 	private Piece[] pieces;
 
 	/**

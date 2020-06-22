@@ -4,6 +4,12 @@ import fr.diginamic.banque.entites.Operation;
 import fr.diginamic.banque.entites.Credit;
 import fr.diginamic.banque.entites.Debit;
 
+/**
+ * Classe de test pour les operations
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class TestOperations {
 
 	public static void main(String[] args) {

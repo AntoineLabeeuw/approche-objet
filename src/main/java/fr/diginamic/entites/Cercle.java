@@ -7,8 +7,9 @@ package fr.diginamic.entites;
  *
  */
 public class Cercle {
+	/** rayon */
 	private double rayon;
-	static final double PI = 3.14;
+	static final double PI = Math.PI;
 
 	/**
 	 * methode qui renvoie le perimetre du cercle

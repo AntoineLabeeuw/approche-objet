@@ -9,6 +9,7 @@ import java.util.Arrays;
  *
  */
 public class CalculMoyenne {
+	/** tabNote : tableau de notes */
 	private double[] tabNote;
 
 	/**
@@ -18,9 +19,10 @@ public class CalculMoyenne {
 		this.tabNote = new double[0];
 	}
 
-	/** methode qui permet d'ajouter une nouvelle valeur au tableau.
-	 * Si le tableau est plein, la methode permet de rajouter une case automatiquement
-	 * a celui-ci.
+	/**
+	 * methode qui permet d'ajouter une nouvelle valeur au tableau. Si le tableau
+	 * est plein, la methode permet de rajouter une case automatiquement a celui-ci.
+	 * 
 	 * @param newValeur : la nouvelle valeur a ajouter
 	 */
 	public void ajout(double newValeur) {
@@ -36,7 +38,9 @@ public class CalculMoyenne {
 		this.tabNote = newTableau;
 	}
 
-	/** methode qui permet de calculer la moyenne des tableaux.
+	/**
+	 * methode qui permet de calculer la moyenne des tableaux.
+	 * 
 	 * @return la moyenne du tableau
 	 */
 	public double calcul() {

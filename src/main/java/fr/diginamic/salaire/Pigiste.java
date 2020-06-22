@@ -1,8 +1,16 @@
 package fr.diginamic.salaire;
 
+/**
+ * classe conceptualisant un pigiste.
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class Pigiste extends Intervenant {
 	// double pour pouvoir ajouter les demi-journees
+	/** nbJours */
 	private double nbJours;
+	/** montantJournalier */
 	private double montantJournalier;
 
 	/**
@@ -13,7 +21,7 @@ public class Pigiste extends Intervenant {
 	public double getSalaire() {
 		return (nbJours * montantJournalier);
 	}
-	
+
 	/**
 	 * Override de la methode abstraite getStatut : retourne "pigiste"
 	 */

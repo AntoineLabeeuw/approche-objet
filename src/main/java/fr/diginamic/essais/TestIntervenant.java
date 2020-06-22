@@ -3,7 +3,9 @@ package fr.diginamic.essais;
 import fr.diginamic.salaire.Salarie;
 import fr.diginamic.salaire.Pigiste;
 
-/** Classe de test pour la classe Intervenant et ses classes fille.
+/**
+ * Classe de test pour la classe Intervenant et ses classes fille.
+ * 
  * @author antoinelabeeuw
  *
  */
@@ -16,14 +18,14 @@ public class TestIntervenant {
 		System.out.println(s1.getSalaire());
 		System.out.println("----- Pigiste -----");
 		System.out.println(p2.getSalaire());
-		
+
 		System.out.println();
 		// avec la methode afficherDonnees
 		System.out.println("----- Salarié -----");
 		s1.afficheDonnees();
 		System.out.println("----- Pigiste -----");
 		p2.afficheDonnees();
-		
+
 	}
 
 }

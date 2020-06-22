@@ -8,8 +8,10 @@ package fr.diginamic.formes;
  *
  */
 public class Cercle extends Forme {
+	/** rayon */
 	private double rayon;
-	static final double PI = 3.14;
+	/** PI */
+	static final double PI = Math.PI;
 
 	/**
 	 * constructeur

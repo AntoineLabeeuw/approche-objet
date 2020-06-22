@@ -4,6 +4,8 @@ import fr.diginamic.entites.Cercle;
 import fr.diginamic.utils.CercleFactory;
 
 /**
+ * classe de test pour le cercle
+ * 
  * @author antoinelabeeuw
  *
  */

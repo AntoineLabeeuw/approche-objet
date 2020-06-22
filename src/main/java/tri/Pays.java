@@ -4,9 +4,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * classe conceptualisant un pays
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class Pays implements Comparable<Pays> {
+	/** nom */
 	private String nom;
+	/** nombreHab */
 	private long nombreHab;
+	/** pibHab */
 	private double pibHab;
 
 	/**
@@ -88,13 +97,18 @@ public class Pays implements Comparable<Pays> {
 	public double getPibTotal() {
 		return (pibHab * nombreHab);
 	}
-	
+
 	@Override
 	public int compareTo(Pays p2) {
 		// tri par le nom en ordre alphabetique
-		return(nom.compareTo(p2.nom));
+		return (nom.compareTo(p2.nom));
 	}
 
+	/**
+	 * methode de test
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		List<Pays> listePays = new ArrayList<>();
 		listePays.add(new Pays("USA", 332_639_000, 59_495));
@@ -106,7 +120,7 @@ public class Pays implements Comparable<Pays> {
 		listePays.add(new Pays("Chine", 1_400_050_000, 16_624));
 		listePays.add(new Pays("Russie", 146_748_590, 28_712));
 		listePays.add(new Pays("Inde", 1_368_163_000, 5_174));
-		
+
 		// liste non triee
 		System.out.println(listePays);
 		Collections.sort(listePays);
@@ -119,9 +133,5 @@ public class Pays implements Comparable<Pays> {
 		Collections.sort(listePays, new ComparatorPibHabitant());
 		System.out.println(listePays);
 	}
-
-	
-	
-	
 
 }

@@ -1,17 +1,25 @@
 package fr.diginamic.salaire;
 
+/**
+ * classe conceptualisant un salarie
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class Salarie extends Intervenant {
+	/** salaireMensuel */
 	private double salaireMensuel;
 
 	/**
-	 * Override de la methode abstraite getSalaire() retourne le salaire du salarie
+	 * Override de la methode abstraite getSalaire() <br/>
+	 * retourne le salaire du salarie
 	 *
 	 */
 	@Override
 	public double getSalaire() {
 		return (salaireMensuel);
 	}
-	
+
 	/**
 	 * Override de la methode abstraite getStatut : retourne "salarie"
 	 */
@@ -19,6 +27,7 @@ public class Salarie extends Intervenant {
 	public String getStatut() {
 		return ("salarié");
 	}
+
 	/**
 	 * Constructeur
 	 * 
@@ -44,7 +53,5 @@ public class Salarie extends Intervenant {
 	public void setSalaireMensuel(double salaireMensuel) {
 		this.salaireMensuel = salaireMensuel;
 	}
-
-
 
 }

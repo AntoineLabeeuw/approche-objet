@@ -2,6 +2,12 @@ package fr.diginamic.essais;
 
 import fr.diginamic.operations.CalculMoyenne;
 
+/**
+ * Classe de test pour le calcul de moyenne
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class TestMoyenne {
 
 	public static void main(String[] args) {

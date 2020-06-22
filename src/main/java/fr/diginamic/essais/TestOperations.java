@@ -3,7 +3,7 @@ package fr.diginamic.essais;
 import fr.diginamic.operations.Operations;
 
 /**
- * test de la classe Operations
+ * classe de test de la classe Operations
  * 
  * @author antoinelabeeuw
  *

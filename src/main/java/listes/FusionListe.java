@@ -3,6 +3,12 @@ package listes;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * classe de test pour fusionner des listes
+ * 
+ * @author antoinelabeeuw
+ *
+ */
 public class FusionListe {
 	public static void main(String args[]) {
 
@@ -15,11 +21,11 @@ public class FusionListe {
 		liste2.add("Bleu");
 		liste2.add("Orange");
 		List<String> liste3 = new ArrayList<>();
-		
-		for(String str : liste1) {
+
+		for (String str : liste1) {
 			liste3.add(str);
 		}
-		for(String str : liste2) {
+		for (String str : liste2) {
 			liste3.add(str);
 		}
 	}
